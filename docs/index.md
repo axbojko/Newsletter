@@ -3,7 +3,7 @@
 
 # Arista Southwest Region Newsletter
 
-Welcome to the October 2025 newsletter for Arista customers in the U.S. Southwest Region!  
+Welcome to the November 2025 newsletter for Arista customers in the U.S. Southwest Region!  
 
 Did you hear? VeloCloud is now a part of Arista. Check out the latest blog, written by our CEO, Jayshree Ullal below!  
 [Next Generation SD-WAN in the AI Era, by Arista CEO Jayshree Ullal](https://blogs.arista.com/blog/next-generation-sd-wan-in-the-ai-era)  
@@ -16,59 +16,82 @@ We welcome your feedback on the newsletter. If you have any ideas on what you wa
 
 ---
 
-## **VeloCloud SD-WAN - Now Part of Arista**
-By: Chris Donovan, Systems Engineer (VeloCloud)  
+## **Unlocking Continuous Network Uptime: The Power of Arista SSU Hitless Upgrade**
+By: Alex Bojko, Advanced Services Engineer  
 
-Arista Networks, known for its campus and data center switching, has completed the purchase of VeloCloud in order to provide a full end-to-end intelligent network. You might be wondering: why VeloCloud? VeloCloud has led in the Gartner Magic Quadrant for SD-WAN for 7 years straight. Using our Dynamic Multi-Path Optimization (DMPO) technology, VeloCloud is able to provide improved performance and resilience between corporate sites as well as between corporate sites and the cloud.  
+The words "it's time to upgrade the network" can send shivers down even the most seasoned network engineers' spine. The term software upgrade is synonymous with network downtime in the realm of network engineering. Schedules must be adjusted, clients and customers alerted, and downtime, or planned outages, must be scheduled to complete these tedious procedures. Even a few seconds of downtime can have a real operational and financial impact on many organizations. For certain domains, like healthcare, network downtime is unacceptable.  
+
+Arista aims to flip the script on software upgrades by delivering game-changing hitless upgrades that result in minimal to no packet loss and no impact to end users. Yes, you read that correctly, leveraging the power of Arista SSU (Smart System Upgrade), an EOS switch supporting Access Points, PC's, IP Phones, IP Cameras, and any other end device can undergo a software upgrade without any impact to client traffic.  
+
+In this article, we will highlight how the hitless upgrade procedure works, and how you can complete the upgrade solely through CloudVision.   
+
+SSU, or Arista's hitless upgrade, works by forwarding data plane traffic based on the last known state of the device's control plane as it appeared prior to the upgrade. All PoE (Power over Ethernet) devices connected to the switch will continue to receive power throughout the entirety of the upgrade. The below image depicts a comparison of what occurs during a normal software upgrade vs the Arista SSU hitless upgrade.   
+
 
 <figure markdown="span">
-  ![First Pic](img/October25Pic1.png)
-  <figcaption>Arista VeloCloud</figcaption>
+  ![First Pic](img/November25Pic1.png){: style="height:150px;width:700px"}
+  <figcaption>Traditional Upgrade</figcaption>
 </figure>  
 
-**What is DMPO**  
+<figure markdown="span">
+  ![First Pic](img/November25Pic2.png){: style="height:175px;width:700px"}
+  <figcaption>SSU Smart System Upgrade</figcaption>
+</figure>  
 
-DMPO is our overlay technology. DMPO allows us to measure loss, latency and jitter on WAN links in real time and in both directions independently. We then identify applications using Deep Packet Inspection and direct them over the best available bandwidth based on their performance needs. Realtime traffic can be directed to the WAN link with the lowest loss, latency and jitter and when those characteristics change, can be moved to the new best path, transparently to the users. Large file transfers can be spread across multiple WAN links of different speeds to use all available bandwidth without choking higher priority applications.     
+The only observed packet loss, if any, occurs during the sub-second timeframe where the device's control plane comes back online, and re-syncs with the data plane.  
 
-**What about Cloud and SaaS applications?**  
+SSU is the perfect solution for single-homed endpoints, which encompass the vast majority of campus end devices. These devices rely on a single connection to a switch for uptime, and with the introduction of SSU hitless upgrades, are now able to achieve continuous network uptime even during software upgrades. An access point, which can service hundreds of clients, can maintain power and internet connectivity while the access switch it's connected to undergoes a software upgrade. This is applicable to all access devices that service our network users.   
 
-Most SD-WAN solutions work great between corporate sites where an SD-WAN device can be installed on both ends. As more applications move to the cloud, requiring an SD-WAN device on both ends becomes cumbersome. VeloCloud solves this by hosting gateways (VCGs) in major datacenters around the world. These hosted VCGs enable you to leverage the capabilities of DMPO from the branch to the front doors of all the major Cloud and SaaS providers without any additional effort.   
+As mentioned above, hitless upgrades can be executed entirely through CloudVision using the Software Management Studio. Simply assign a new version of EOS to your Arista switch and submit the workspace. You can directly download the desired EOS image without ever leaving CloudVision. Downloading the image will make it accessible in CloudVIsion for the current and all future devices to use.  
 
-While there are many other features in the VeloCloud portfolio, DMPO and the hosted VCGs provide two of the biggest differentiators for us. As a Systems Engineer that came over with the VeloCloud acquisition, I am excited about the future under Arista and the integrations that are taking shape. If you want to find out more about VeloCloud, I look forward to meeting with you and showing you what we can do.  
+After selecting the desired image and submitting the Workspace, within the Change Control tab, select the device, followed by the arguments tab, and under the "Reload-Mode" dropdown, select "SSU Only". This will instruct CloudVision to proceed with a hitless upgrade, as opposed to a standard software upgrade. The last step is the Approve and Execute the Change Control, and the device will begin the SSU process. You can view the logs associated with the change directly through the Change Control screen as well.   
 
-For more information on Arista VeloCloud SDWAN, please select link below:
-[Arista VeloCloud SDWAN](https://www.arista.com/en/solutions/sd-wan)  
+<figure markdown="span">
+  ![First Pic](img/November25Pic4.png){: style="height:150px;width:700px"}
+  <figcaption>SSU Smart System Upgrade</figcaption>
+</figure>   
+
+The Arista SSU Hitless upgrade is a game-changer for network engineers who once feared the task of completing  software upgrades. For more information on hitless upgrades, please click on the links below.   
+
+[Tech Library: Hitless Upgrade](https://tech-library.arista.com/solution_guides/ssu/)  
 
 
 ---
 
-## **Simplifying Campus Network Operations with CloudVision Network Hierarchy**
-By: Alex Bojko, Advanced Services Engineer, Southwest Region    
+## **A More Simple View of Network Metrics**
+By: Akashdeep Takhar, Advanced Services Engineer, Southwest Region    
 
-Managing modern campus networks can prove to be a challenging task that can feel overwhelming at times. Campus networks encompass large numbers of remote sites, each with unique characteristics and various devices to manage. In order to simplify the management of such a distributed infrastructure, Arista has introduced Network Hierarchy in CloudVision.     
+A more efficient approach to monitoring network traffic metrics not only helps in identifying issues in production, it can also lead to a significantly faster time to troubleshooting. Although the CLI is great at quickly gathering information, utilizing graphs and charts to visually represent that data allows for an illustrative way to measure network information. That’s where the Dashboards tool in CloudVision is ready to help.  
 
-Overseeing such a deployment and gaining visibility into various sites and device connections is a difficult task to accomplish. When an issue arises, locating that issue and pinpointing it to a specific site can be an extremely difficult task. Configuration across sites can also be difficult to standardize and modify when needed.  
-
-Network Hierarchy is a feature meant to simplify campus network management, and was introduced to Arista CloudVision to help address these pain points at scale.  
-
-Network Hierarchy in CloudVision provides a logical, tree-like structured view that allows you to group devices together by location. Instead of a linear list of devices that are scattered across your infrastructure, Network Hierarchy provides an organized, simple to comprehend view that allows you to navigate seamlessly between campus networks that you manage using the tree-like structured navigation panel. This structure works at scale, making it easy to oversee and manage large deployments with many physical locations. Each Campus is organized within the hierarchy, with devices grouped by physical location and operational use.  
+Dashboards give the ability for network data to be visually represented in graphs, charts, interactive menus, and customizable layouts. Rather than navigating across multiple devices, you can gather both summaries and in depth views of the entire network. CloudVision provinces pre-built Dashboards for you to view. However, in addition to that, you have the ability to become creative and customize these Dashboards to your liking. Let’s take a look at some examples of Dashboards.  
 
 <figure markdown="span">
-  ![Pic2](img/Oct25Pic2.png)
-  <figcaption>Network Hierarchy Page</figcaption>
+  ![Pic2](img/November25Pic5.png)
+  <figcaption>Network Health Dashboard</figcaption>
 </figure>  
 
-Within each Campus defined in Network Hierarchy, statistics and metrics are displayed that provide a comprehensive overview tailored to what is happening at each individual site. Metrics include statistics from both the wired and wireless side, Uplink health, MLAG Status, authentication information, connectivity monitor status, and a logical topology view of the Campus network.  This allows operators to quickly go from a global, network wide view, to a site/device specific, interface specific, drilled down view. Having this flexibility allows for faster MTTR, as issues are able to be isolated far more quickly and efficiently. Operators can locate issues that are specific to a site, and from there drill down to determine the exact device or devices experiencing the issues.  
+In the example above, we have a dashboard that lists events that impact the health of the networks. The left hand horizontal bar chart works like this: the x-axis identifies a number of devices, the y-axis lists type of events that are harmful to given device, the colors of the bar categorize the event types as critical, error, or warning. By viewing this, we are informed that many devices in the network are exposed to potential harm. To further elaborate on those warning, take a look at the table located to the right.  
+
+The table on the right lists the events and the message associated with that event. By looking at these two side by side, we now know of potential issues that are impactful to the device. Had that not been there, we would not be able to identify issues early on before scaling out the production for future use. At the bottom of the dashboard, we see a timeline of critical issues for the untagged devices, further providing us with information necessary to fix.  
 
 <figure markdown="span">
-  ![Pic2](img/Oct25Pic3.png)
-  <figcaption>Network Hierarchy Port Specific View</figcaption>
+  ![Pic2](img/November25Pic6.png)
+  <figcaption>Device Power Consumption Dashboard</figcaption>
 </figure>   
 
-Network Hierarchy also allows for access layer interface configuration via the Access Interface Configuration Quick Action in CloudVIsion. Here, the operator can rapidly assign access layer port configuration to individual or groups of interfaces. This further simplifies day 2 operations, as any campus device switchport configuration can be viewed and modified as needed, all from the Network Hierarchy view.  
+Another Dashboard that is pre-built into your CloudVision instance is the Device Power Consumption board. A method of analyzing devices for troubleshooting problems, could be to view this dashboard for an overall view of input and output wattage use. If you suspect that there are powers issues that are causing network disruptions, simply navigate to this page to see all the devices and their power consumption.  
 
-To learn more about Network Hierarchy, the metrics it provides, how to run diagnostics, and how it can simplify your Campus network management, click the link below.  
-[Arista Network Hierarchy Guide](https://www.arista.io/help/articles/bmV0d29ya0hpZXJhcmNoeS5BbGwubmV0d29ya0hpZXJhcmNoeQ==) 
+In addition to the graph, the bar at the top labeled “devices device*” allows for you to view the metrics, specified for that particular device. In the case where you would prefer to view the power use of multiple devices, you can select those devices within the top drop down bar as well. The graphs readjust to the chosen device. Take a look below as we select a device:  
+
+<figure markdown="span">
+  ![Pic2](img/November25Pic7.png)
+  <figcaption>Device Power Consumption Dashboard</figcaption>
+</figure>  
+
+These are examples of pre-built dashboards. CloudVision allows for you to also create a many customizable dashboard to specific metric views that are of interest to you. If you would like any assistance on how to begin this step, contact your ASE or SE to set up a meeting.  
+
+For more information on dashboards in CloudVision, click the link below:  
+[CloudVision Dashboard Guide](https://www.arista.io/help/articles/ZGFzaGJvYXJkcy5BbGwuZGFzaGJvYXJkcw==)   
 
 
 ---
@@ -111,8 +134,8 @@ For new code releases, click [here](https://www.arista.com/en/support/software-d
 
    |  Softwares    | Versions      |  Release Date |
    | :-----------: | :-----------: | :-----------:
-   | __EOS__           | 4.34.2F <br>4.32.6.1M <br> 4.33.4M <br> 4.32.6M <br>  | August 3rd, 2025 <br>July 2nd, 2025 <br> June 23rd, 2025 <br> June 20th, 2025 <br> 
-   | __CVP__           | Portal 2025.2.1 <br> Appliance 7.0.1 <br> Sensor 1.1.1 <br>    | August 21st, 2025 <br> January 28th, 2025<br> July 14th, 2025 <br>
+   | __EOS__           | 4.34.3.1M <br>4.32.8M <br> 4.34.3M <br> 4.35.0F <br>  | November 4th, 2025 <br>October 27th, 2025 <br> October 6th, 2025 <br> October 6th, 2025 <br> 
+   | __CVP__           | Portal 2025.2.1 <br> Appliance 7.0.1 <br> Sensor 1.2.0 <br>    | August 21st, 2025 <br> January 28th, 2025<br> September 8th, 2025 <br>
    | __DMF__           | 8.8.0 <br >| August 15th, 2025 <br> 
    | __WLAN__ <br>CV-CUE<br> | <br> 19.0.0 <br>      | <br> July 25th, 2025<br>  
    | __Arista NDR__         | 5.3.5         | July 16th, 2025
@@ -127,14 +150,11 @@ Below is a list of advisories that are announced by Arista. To view more details
 
 | Name          | Advisory Link           | Date of Advisory Notice  |
 | :-----------: |:-------------:| :-----:|
-|  __Global Common Encryption Key__   | [Security Advisory 0122](https://www.arista.com/en/support/advisories-notices/security-advisory/22022-security-advisory-0122)  | July 22nd, 2025   |  
-|  __UDP Source Port 3503 Packets__   | [Security Advisory 0121](https://www.arista.com/en/support/advisories-notices/security-advisory/22021-security-advisory-0121)  | July 22nd, 2025   |  
-|  __AP Kernal Panics__   | [Field Notice 0115](https://www.arista.com/en/support/advisories-notices/field-notice/22422-field-notice-0115)  | September 20th, 2025   |  
-|  __Updated Redirector for AP__   | [Field Notice 0114](https://www.arista.com/en/support/advisories-notices/field-notice/22418-field-notice-0114)  | September 19th, 2025   |  
-|  __Guest Manager UI to CV-CUE__   | [Field Notice 0113](https://www.arista.com/en/support/advisories-notices/field-notice/22417-field-notice-0113)  | September 19th, 2025   |  
-|  __Update of Radsec Certificates__   | [Field Notice 0112](https://www.arista.com/en/support/advisories-notices/field-notice/22400-field-notice-0112)  | September 11th, 2025   |  
-|  __CVP Reverse Proxy__   | [Field Notice 0111](https://www.arista.com/en/support/advisories-notices/field-notice/22238-field-notice-0111)  | September 3rd, 2025   |  
-|  __CVP Disc Usage__   | [Field Notice 0110](https://www.arista.com/en/support/advisories-notices/field-notice/22237-field-notice-0110)  | September 3rd, 2025   | 
+|  __Arista DANZ Monitoring Fabric__   | [Security Advisory 0124](https://www.arista.com/en/support/advisories-notices/security-advisory/22538-security-advisory-0124)  | October 22nd, 2025   |  
+|  __Arista Edge Threat Management NGFW__   | [Security Advisory 0123](https://www.arista.com/en/support/advisories-notices/security-advisory/22535-security-advisory-0123)  | October 21st, 2025   |  
+|  __WiFi 7 Access Points Firmware Version 21.0__   | [Field Notice 0117](https://www.arista.com/en/support/advisories-notices/field-notice/22534-field-notice-0117)  | October 16th, 2025   |  
+|  __SwitchApp Interfaces starting with EOS 4.35.0F__   | [Field Notice 0116](https://www.arista.com/en/support/advisories-notices/field-notice/22528-field-notice-0116)  | October 14th, 2025   |  
+
  
 
 
@@ -153,9 +173,10 @@ For a list of the most current advisories and notices, click [Here](https://www.
 | :-----------: |:-------------: |     :----:        |
 | Software      | [End of Software for CloudVision Portal 2023.2](https://www.arista.com/en/support/advisories-notices/end-of-support/21412-end-of-software-support-for-cloudvision-portal-2023-2-release-train)<br>[End of Software Support for EOS 4.28](https://www.arista.com/en/support/advisories-notices/end-of-support/21275-end-of-software-support-for-eos-4-28)<br>[DMF and CCF Deployments on Accton/ Edgecore Switches](https://www.arista.com/en/support/advisories-notices/end-of-support/21094-end-of-support-for-dmf-and-ccf-deployments-on-accton-edgecore-switches)<br>[EOS-4.34 and later no longer supported on select switches](https://www.arista.com/en/support/advisories-notices/end-of-support/21089-end-of-software-support-for-7280r-r2-7500r-r2-and-7020r-series)<br> | May 27th. 2025 <br> March 14, 2025 <br>January 31st, 2025 <br>January 15th, 2025 <br> |
 | CVP           | [CVP IPAM Application](https://www.arista.com/en/support/advisories-notices/endofsupport) <br> [CVP 2023.3](https://www.arista.com/en/support/advisories-notices/end-of-support/21627-end-of-software-support-for-cloudvision-portal-2023-3-release-train)          |  July 14th, 2025 <br> June 17th, 2025   |
-| DMF           | [DMF 8.3](https://www.arista.com/en/support/advisories-notices/end-of-support/21417-end-of-software-support-for-dmf-8-3)          |  June 3rd, 2025           |  
+| DMF           | [DMF Service Node DCA-DM-SC2](https://www.arista.com/en/support/advisories-notices/end-of-sale/22537-end-of-sale-end-of-life-for-arista-service-node-appliance-dca-dm-sc2)          |  October 22nd, 2025           |  
 | CCF           | [CCF Product Line](https://www.arista.com/en/support/advisories-notices/end-of-sale/22430-end-of-sale-end-of-life-for-arista-ccf-product-line)          |  October 1st, 2025           |  
 | Switches      | [7010TX-48-DC Switch](https://www.arista.com/en/support/advisories-notices/end-of-sale/22421-end-of-sale-of-the-arista-7010tx-48-dc-switches)<br> [7050CX3-32S Switch](https://www.arista.com/en/support/advisories-notices/end-of-sale/22419-end-of-sale-of-the-arista-7050cx3-32s-switches)<br> [CCS-720XP-96ZC2 Switch with 4GB DRAM](https://www.arista.com/en/support/advisories-notices/end-of-sale/22403-end-of-sale-of-the-arista-ccs-720xp-96zc2-switches-with-4gb-dram)<br> [CCS-720D Switches with 4GB DRAM](https://www.arista.com/en/support/advisories-notices/end-of-sale/22402-end-of-sale-of-the-arista-ccs-720d-switches-with-4gb-dram)<br> [CCS-710P-12 Switch](https://www.arista.com/en/support/advisories-notices/end-of-sale/22401-end-of-sale-of-the-arista-ccs-710p-12-switch) |  September 19th, 2025<br> September 19th, 2025<br> Septemebr 12th, 2025<br> September 12th, 2025<br> September 12th, 2025 |
+| Access Points      | [AP Mounts](https://www.arista.com/en/support/advisories-notices/end-of-sale/22536-end-of-sale-of-ap-mounts-mnt-ap-flat-c130-mnt-ap-flat-c100-mnt-ap-flat-14cm-a)<br> |  October 22nd, 2025 <br> | 
 | VeloCloud      | [SASE Secured by Symantec](https://www.arista.com/en/support/advisories-notices/end-of-sale/22072-end-of-sale-life-velocloud-sase-secured-symantec)<br> [Software Defined (SD) Access](https://www.arista.com/en/support/advisories-notices/end-of-sale/21653-end-of-sale-end-of-life-for-velocloud-software-defined-sd-access) <br> |  August 20th, 2024 <br> July 1st, 2025 | 
 
 
