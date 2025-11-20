@@ -5,10 +5,11 @@
 
 Welcome to the November 2025 newsletter for Arista customers in the U.S. Southwest Region!  
 
-Did you hear? VeloCloud is now a part of Arista. Check out the latest blog, written by our CEO, Jayshree Ullal below!  
-[Next Generation SD-WAN in the AI Era, by Arista CEO Jayshree Ullal](https://blogs.arista.com/blog/next-generation-sd-wan-in-the-ai-era)  
+Did you hear? Arista and Palo Alto Networks have patnered to help advance security in this new age of AI. Check out the blog below!    
+[Arista and Palo Alto Networks Partnership in AI Security](https://blogs.arista.com/blog/arista-and-palo-alto-networks-strengthen-partnership-in-the-new-age-of-ai-security)  
 
 Check out additional Blog Posts below!  
+[Next Generation SD-WAN in the AI Era, by Arista CEO Jayshree Ullal](https://blogs.arista.com/blog/next-generation-sd-wan-in-the-ai-era)  
 [CloudVision: The First Decade](https://blogs.arista.com/blog/cloudvision-the-first-decade-2025)  
 [All Blogs](https://blogs.arista.com/blog)  
  
@@ -29,12 +30,13 @@ SSU, or Arista's hitless upgrade, works by forwarding data plane traffic based o
 
 
 <figure markdown="span">
-  ![First Pic](img/November25Pic1.png){: style="height:150px;width:700px"}
+  ![First Pic](img/November25Pic8.png)
   <figcaption>Traditional Upgrade</figcaption>
 </figure>  
 
+
 <figure markdown="span">
-  ![First Pic](img/November25Pic2.png){: style="height:175px;width:700px"}
+  ![First Pic](img/November25Pic9.png)
   <figcaption>SSU Smart System Upgrade</figcaption>
 </figure>  
 
@@ -47,9 +49,10 @@ As mentioned above, hitless upgrades can be executed entirely through CloudVisio
 After selecting the desired image and submitting the Workspace, within the Change Control tab, select the device, followed by the arguments tab, and under the "Reload-Mode" dropdown, select "SSU Only". This will instruct CloudVision to proceed with a hitless upgrade, as opposed to a standard software upgrade. The last step is the Approve and Execute the Change Control, and the device will begin the SSU process. You can view the logs associated with the change directly through the Change Control screen as well.   
 
 <figure markdown="span">
-  ![First Pic](img/November25Pic4.png){: style="height:150px;width:700px"}
+  ![First Pic](img/November25Pic13.png)
   <figcaption>SSU Smart System Upgrade</figcaption>
 </figure>   
+
 
 The Arista SSU Hitless upgrade is a game-changer for network engineers who once feared the task of completing  software upgrades. For more information on hitless upgrades, please click on the links below.   
 
@@ -66,7 +69,7 @@ A more efficient approach to monitoring network traffic metrics not only helps i
 Dashboards give the ability for network data to be visually represented in graphs, charts, interactive menus, and customizable layouts. Rather than navigating across multiple devices, you can gather both summaries and in depth views of the entire network. CloudVision provinces pre-built Dashboards for you to view. However, in addition to that, you have the ability to become creative and customize these Dashboards to your liking. Let’s take a look at some examples of Dashboards.  
 
 <figure markdown="span">
-  ![Pic2](img/November25Pic5.png)
+  ![Pic2](img/November25Pic10.png)
   <figcaption>Network Health Dashboard</figcaption>
 </figure>  
 
@@ -75,16 +78,16 @@ In the example above, we have a dashboard that lists events that impact the heal
 The table on the right lists the events and the message associated with that event. By looking at these two side by side, we now know of potential issues that are impactful to the device. Had that not been there, we would not be able to identify issues early on before scaling out the production for future use. At the bottom of the dashboard, we see a timeline of critical issues for the untagged devices, further providing us with information necessary to fix.  
 
 <figure markdown="span">
-  ![Pic2](img/November25Pic6.png)
+  ![Pic2](img/November25Pic11.png)
   <figcaption>Device Power Consumption Dashboard</figcaption>
 </figure>   
 
 Another Dashboard that is pre-built into your CloudVision instance is the Device Power Consumption board. A method of analyzing devices for troubleshooting problems, could be to view this dashboard for an overall view of input and output wattage use. If you suspect that there are powers issues that are causing network disruptions, simply navigate to this page to see all the devices and their power consumption.  
 
-In addition to the graph, the bar at the top labeled “devices device*” allows for you to view the metrics, specified for that particular device. In the case where you would prefer to view the power use of multiple devices, you can select those devices within the top drop down bar as well. The graphs readjust to the chosen device. Take a look below as we select a device:  
+In addition to the graph, the bar at the top labeled “devices device*” allows for you to view the metrics, specified for a particular device. In the case where you would prefer to view the power use of multiple devices, you can select those devices within the top drop down bar as well. The graphs readjust to the chosen device. Take a look below as we select a device:  
 
 <figure markdown="span">
-  ![Pic2](img/November25Pic7.png)
+  ![Pic2](img/November25Pic12.png)
   <figcaption>Device Power Consumption Dashboard</figcaption>
 </figure>  
 
