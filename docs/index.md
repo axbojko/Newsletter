@@ -18,7 +18,7 @@ We welcome your feedback on the newsletter. If you have any ideas on what you wa
 ---
 
 ## **Unlocking Continuous Network Uptime: The Power of Arista SSU Hitless Upgrade**
-By: Alex Bojko, Advanced Services Engineer  
+By: Alex Bojko, Advisory Systems Engineer  
 
 The words "it's time to upgrade the network" can send shivers down even the most seasoned network engineers' spine. The term software upgrade is synonymous with network downtime in the realm of network engineering. Schedules must be adjusted, clients and customers alerted, and downtime, or planned outages, must be scheduled to complete these tedious procedures. Even a few seconds of downtime can have a real operational and financial impact on many organizations. For certain domains, like healthcare, network downtime is unacceptable.  
 
