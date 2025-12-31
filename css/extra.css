@@ -1,0 +1,201 @@
+/* --- 1. HEADER & LOGO BRANDING --- */
+
+
+
+/* Force Header to Arista Navy */
+.md-header {
+    background-color: #004a99 !important;
+}
+
+/* Align Logo and Title to the far left */
+.md-header__inner {
+    display: flex;
+    justify-content: flex-start !important;
+}
+
+/* Make Logo prominent and White */
+.md-logo img {
+    height: 2.0rem; /* Prominent size */
+    width: auto;
+    filter: brightness(0) invert(1); /* Turns dark logo to white */
+    margin-right: 1rem;
+    vertical-align: middle;
+}
+
+/* Style Header Title next to logo */
+.md-header__title {
+    font-weight: 700;
+    color: #ffffff !important;
+    margin-left: 0 !important;
+}
+
+/* Push Search Bar to the far right */
+.md-search {
+    margin-left: auto;
+}
+
+/* Fix Search bar transparency for contrast */
+.md-search__form {
+    background-color: rgba(255, 255, 255, 0.15) !important;
+}
+
+/* --- 2. NAVIGATION & SIDEBAR --- */
+
+/* Sticky sidebar adjustment */
+.md-sidebar {
+    top: 48px;
+}
+
+/* Sidebar Link Colors */
+.md-nav__link {
+    color: rgba(0, 74, 153, 0.8) !important;
+}
+
+.md-nav__link--active, 
+.md-nav__link:hover {
+    color: #004a99 !important;
+    font-weight: bold;
+}
+
+/* --- 3. BODY CONTENT & LINKS --- */
+
+/* Standard Text Links */
+.md-typeset a {
+    color: #004a99;
+}
+
+.md-typeset a:hover {
+    color: #003a7a;
+    text-decoration: underline;
+}
+
+/* Button Styling (Read Blog, etc.) */
+.md-typeset .md-button {
+    border-color: #004a99;
+    color: #004a99;
+}
+
+.md-typeset .md-button:hover {
+    background-color: #004a99;
+    border-color: #004a99;
+    color: #ffffff;
+}
+
+/* --- 4. TECH TIP (ADMONITIONS) --- */
+
+.md-typeset .admonition.info, 
+.md-typeset details.info {
+    border: 1px solid #004a99;
+    border-left-width: 4px;
+}
+
+.md-typeset .admonition-title, 
+.md-typeset summary {
+    background-color: #004a99 !important;
+    color: #ffffff !important;
+}
+
+/* Ensure Tech Tip Icon is White */
+.md-typeset .admonition-title::before, 
+.md-typeset summary::before {
+    background-color: #ffffff !important;
+    -webkit-mask-image: var(--md-admonition-icon--info);
+    mask-image: var(--md-admonition-icon--info);
+}
+
+/* --- 5. UI ELEMENTS --- */
+
+/* Back to Top Button */
+.md-top {
+    background-color: #004a99;
+    color: #ffffff !important;
+}
+
+.md-top svg {
+    fill: #ffffff !important;
+}
+/* 1. Change the search icon and typed text color to white */
+.md-search__input {
+    color: #ffffff !important;
+}
+
+/* 2. Change the "Search" placeholder text color to white/light gray */
+.md-search__input::placeholder {
+    color: rgba(255, 255, 255, 0.7) !important;
+    opacity: 1; /* Ensures browser defaults don't fade it too much */
+}
+
+/* 3. Fix the search icon color next to the input */
+.md-search__icon {
+    color: #ffffff !important;
+}
+
+/* 4. Optional: Highlight the search bar slightly more when clicked */
+.md-search__input:focus {
+    background-color: rgba(255, 255, 255, 0.25) !important;
+}
+/* 1. Force tables to span the full width of the content area */
+.md-typeset table:not([class]) {
+    display: table;
+    width: 100%;
+    word-break: normal;
+    border-collapse: collapse;
+}
+
+/* 2. Style the Header Row (Arista Navy) */
+.md-typeset thead {
+    background-color: #004a99;
+    color: #ffffff;
+}
+
+.md-typeset thead th {
+    color: #ffffff !important;
+    font-weight: 700;
+    padding: 12px;
+}
+
+/* 3. Add Zebra Striping (Alternating Row Colors) */
+.md-typeset tbody tr:nth-child(odd) {
+    background-color: #ffffff; /* White rows */
+}
+
+.md-typeset tbody tr:nth-child(even) {
+    background-color: #f8f9fa; /* Light gray rows */
+}
+
+/* 4. Add subtle borders for a neat look */
+.md-typeset td {
+    padding: 12px;
+    border-bottom: 1px solid #e9ecef;
+}
+
+/* 5. Highlight row on hover (User experience) */
+.md-typeset tbody tr:hover {
+    background-color: rgba(0, 74, 153, 0.05) !important;
+}
+/* Force standard Markdown tables to span the full width of the page */
+.md-typeset table:not([class]) {
+    display: table;
+    width: 100% !important;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+/* Ensure table cells expand to fill that width evenly */
+.md-typeset td, .md-typeset th {
+    width: auto;
+    min-width: 150px; /* Prevents columns from getting too squished */
+}
+/* Style the Primary CTA Button to Arista Navy */
+.md-typeset .md-button--primary {
+    background-color: #004a99 !important;
+    border-color: #004a99 !important;
+    color: #ffffff !important; /* Force text to white */
+}
+
+/* Add a hover effect for a professional feel */
+.md-typeset .md-button--primary:hover {
+    background-color: #003a7a !important; /* Slightly darker navy on hover */
+    border-color: #003a7a !important;
+    color: #ffffff !important;
+}

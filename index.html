@@ -64,6 +64,8 @@
       
     
     
+      <link rel="stylesheet" href="css/extra.css">
+    
     <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -75,10 +77,12 @@
   
     
     
+      
     
     
     
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="indigo">
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -105,8 +109,7 @@
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="." title="Arista Newsletter" class="md-header__button md-logo" aria-label="Arista Newsletter" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <img src="img/Arista_Logo_copy.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -131,7 +134,19 @@
     </div>
     
       
+        <form class="md-header__option" data-md-component="palette">
+  
     
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
     
     
     
@@ -203,8 +218,7 @@
   <label class="md-nav__title" for="__drawer">
     <a href="." title="Arista Newsletter" class="md-nav__button md-logo" aria-label="Arista Newsletter" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <img src="img/Arista_Logo_copy.png" alt="logo">
 
     </a>
     Arista Newsletter
@@ -362,10 +376,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#software-advisories" class="md-nav__link">
+  <a href="#security-advisories-and-field-notices" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Software Advisories
+        Security Advisories and Field Notices
       
     </span>
   </a>
@@ -373,10 +387,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#product-updates" class="md-nav__link">
+  <a href="#product-updates-new-releases-and-end-of-sale-notices" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Product Updates
+        Product Updates - New Releases and End of Sale Notices
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#your-southwest-regional-team-is-here-to-support-your-success" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Your Southwest Regional Team is Here to Support Your Success.
       
     </span>
   </a>
@@ -590,10 +615,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#software-advisories" class="md-nav__link">
+  <a href="#security-advisories-and-field-notices" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Software Advisories
+        Security Advisories and Field Notices
       
     </span>
   </a>
@@ -601,10 +626,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#product-updates" class="md-nav__link">
+  <a href="#product-updates-new-releases-and-end-of-sale-notices" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Product Updates
+        Product Updates - New Releases and End of Sale Notices
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#your-southwest-regional-team-is-here-to-support-your-success" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Your Southwest Regional Team is Here to Support Your Success.
       
     </span>
   </a>
@@ -754,16 +790,13 @@ Before pushing a major config change to your network, use the <strong>CloudVisio
 </div>
 <hr />
 <h2 id="software-updates"><strong><em>Software Updates</em></strong><a class="headerlink" href="#software-updates" title="Permanent link">&para;</a></h2>
-<figure>
-<p><img alt="Image Placement" src="img/pictureOfCloudVision.jpeg" style="height:200px;width:300px" />  <br />
-    <figcaption></figcaption></p>
-</figure>
+<p><img alt="Image Placememt" src="img/software_upgrades_condensed.png" /></p>
 <p>For new code releases, click <a href="https://www.arista.com/en/support/software-download" target="_blank">here</a> </p>
 <table>
 <thead>
 <tr>
-<th style="text-align: center;">Softwares</th>
-<th style="text-align: center;">Versions</th>
+<th style="text-align: center;">Software</th>
+<th style="text-align: center;">Version</th>
 <th style="text-align: center;">Release Date</th>
 </tr>
 </thead>
@@ -806,7 +839,8 @@ Before pushing a major config change to your network, use the <strong>CloudVisio
 </tbody>
 </table>
 <hr />
-<h2 id="software-advisories"><strong><em>Software Advisories</em></strong><a class="headerlink" href="#software-advisories" title="Permanent link">&para;</a></h2>
+<h2 id="security-advisories-and-field-notices"><strong><em>Security Advisories and Field Notices</em></strong><a class="headerlink" href="#security-advisories-and-field-notices" title="Permanent link">&para;</a></h2>
+<p><img alt="Image Placememt" src="img/Security_image.png" /></p>
 <p>Below is a list of advisories that are announced by Arista. To view more details on the specific advisories, please click the links in the middle row.</p>
 <table>
 <thead>
@@ -841,11 +875,40 @@ Before pushing a major config change to your network, use the <strong>CloudVisio
 </table>
 <p>For a list of the most current advisories and notices, click <a href="https://www.arista.com/en/support/advisories-notices" target="_blank">Here</a></p>
 <hr />
-<h2 id="product-updates"><strong><em>Product Updates</em></strong><a class="headerlink" href="#product-updates" title="Permanent link">&para;</a></h2>
-<figure>
-<p><img alt="Image Placement" src="img/pictureOfSwitches.jpeg" style="height:200px;width:400px" /> <br />
-    <figcaption></figcaption></p>
-</figure>
+<h2 id="product-updates-new-releases-and-end-of-sale-notices"><strong><em>Product Updates - New Releases and End of Sale Notices </em></strong><a class="headerlink" href="#product-updates-new-releases-and-end-of-sale-notices" title="Permanent link">&para;</a></h2>
+<p><img alt="Image Placememt" src="img/Product_image.png" /></p>
+<p><strong>New Releases</strong> of Arista's devices are listed below </p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Device</th>
+<th style="text-align: center;">More Information</th>
+<th style="text-align: center;">Release Date</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Arista VeloCloud</td>
+<td style="text-align: center;"><a href="https://www.arista.com/en/company/news/press-release/21646-pr-07012025" target="_blank">VeloCloud Acquisition</a></td>
+<td style="text-align: center;">Q3 2025</td>
+</tr>
+<tr>
+<td style="text-align: center;">Arista SWAG</td>
+<td style="text-align: center;"><a href="https://www.arista.com/en/company/news/press-release/20693-pr-12032024" target="_blank">Modern Stacking for Campus</a></td>
+<td style="text-align: center;">Q1 2025</td>
+</tr>
+<tr>
+<td style="text-align: center;">Arista Multi-Domain Segmentation Service</td>
+<td style="text-align: center;"><a href="https://www.arista.com/en/company/news/press-release/19297-pr-20240430" target="_blank">Arista MSS</a></td>
+<td style="text-align: center;">Q3 2024</td>
+</tr>
+<tr>
+<td style="text-align: center;">Arista CV UNO</td>
+<td style="text-align: center;"><a href="https://www.arista.com/en/company/news/press-release/19195-pr-20240305" target="_blank">CloudVision Universal Network Observability</a></td>
+<td style="text-align: center;">Q1 2024</td>
+</tr>
+</tbody>
+</table>
 <p><strong>End of Sale</strong> notices are listed below.</p>
 <table>
 <thead>
@@ -893,44 +956,15 @@ Before pushing a major config change to your network, use the <strong>CloudVisio
 </tr>
 </tbody>
 </table>
-<p><strong>New Releases</strong> of Arista's devices are listed below </p>
-<table>
-<thead>
-<tr>
-<th style="text-align: center;">Device</th>
-<th style="text-align: center;">More Information</th>
-<th style="text-align: center;">Release Date</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: center;">Arista VeloCloud</td>
-<td style="text-align: center;"><a href="https://www.arista.com/en/company/news/press-release/21646-pr-07012025" target="_blank">VeloCloud Acquisition</a></td>
-<td style="text-align: center;">Q3 2025</td>
-</tr>
-<tr>
-<td style="text-align: center;">Arista SWAG</td>
-<td style="text-align: center;"><a href="https://www.arista.com/en/company/news/press-release/20693-pr-12032024" target="_blank">Modern Stacking for Campus</a></td>
-<td style="text-align: center;">Q1 2025</td>
-</tr>
-<tr>
-<td style="text-align: center;">Arista Multi-Domain Segmentation Service</td>
-<td style="text-align: center;"><a href="https://www.arista.com/en/company/news/press-release/19297-pr-20240430" target="_blank">Arista MSS</a></td>
-<td style="text-align: center;">Q3 2024</td>
-</tr>
-<tr>
-<td style="text-align: center;">Arista CV UNO</td>
-<td style="text-align: center;"><a href="https://www.arista.com/en/company/news/press-release/19195-pr-20240305" target="_blank">CloudVision Universal Network Observability</a></td>
-<td style="text-align: center;">Q1 2024</td>
-</tr>
-</tbody>
-</table>
 <hr />
-<h1 id="feel-free-to-reach-out-to-us-for-your-network-needs"><em>Feel Free to Reach Out To Us For Your Network Needs</em> <figure markdown><a class="headerlink" href="#feel-free-to-reach-out-to-us-for-your-network-needs" title="Permanent link">&para;</a></h1>
-<p><img alt="Image Placement" src="img/pictureOfNetworks.jpeg" style="height:300px;width:800px" /><br />
-    <figcaption></figcaption>
-</figure>
-We thank you for taking the time to read our newsletter today. Feel free to reach out to your SE or ASE for more information or questions regarding your network operations. Until next month, have a good one!</p>
+<h2 id="your-southwest-regional-team-is-here-to-support-your-success"><em>Your Southwest Regional Team is Here to Support Your Success.</em><a class="headerlink" href="#your-southwest-regional-team-is-here-to-support-your-success" title="Permanent link">&para;</a></h2>
+<p><img alt="Image Placememt" src="img/Arista_Banner.png" /></p>
+<hr />
+<div style="background-color: #f8f9fa; border-left: 5px solid #004a99; padding: 20px; margin-top: 30px;">
+  <h3 style="color: #004a99; margin-top: 0;">Let's Connect</h3>
+  <p>Thanks for reading! Your local Arista team is here to help you navigate your evolving network needs. Reach out anytime to southwest@arista.com for more information or technical guidance. Until next month—stay connected!</p>
+  <a href="mailto:southwest@arista.com" class="md-button md-button--primary">Contact Your Local Team</a>
+</div>
 
 
 
@@ -950,6 +984,12 @@ We thank you for taking the time to read our newsletter today. Feel free to reac
           
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
         
       </main>
       
@@ -984,7 +1024,7 @@ We thank you for taking the time to read our newsletter today. Feel free to reac
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["content.footnote.tooltips", "navigation.sections", "navigation.expand"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["content.footnote.tooltips", "navigation.sections", "navigation.expand", "toc.follow", "navigation.top"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="assets/javascripts/bundle.79ae519e.min.js"></script>
