@@ -1,40 +1,51 @@
 site_name: Arista Newsletter
-
 site_url: https://axbojko.github.io/Newsletter/
 repo_name: aristasouthwest/Newsletter
 docs_dir: docs/
 edit_uri: edit/main/docs/
 
-markdown_extensions:
-- abbr
-- attr_list
-- md_in_html
-- admonition
-- tables
-- def_list
-- footnotes
-- pymdownx.details
-- pymdownx.superfences
-- pymdownx.snippets
-- toc: 
-    permalink: true  
-- pymdownx.tasklist:  
-    custom_checkbox: true
-
 theme:
   name: material
+  logo: img/Arista_Logo_copy.png
+  favicon: img/arista_logo.png
+  # All the items below MUST be indented under 'theme'
+  palette:
+    - primary: custom
+      primary_color: "#004a99" # Arista Official Blue
+      accent: custom
+      accent_color: "#004a99"  
+  font:
+    text: Roboto
+    code: Roboto Mono
   features: 
     - content.footnote.tooltips
-    - navigation.sections  # Groups the archive links under a bold header
-    - navigation.expand   # Keeps the archive section open by default
+    - navigation.sections
+    - navigation.expand
+    - toc.follow
+    - navigation.top
   icon:
     admonition:
       quote: octicons/quote-16
       note: octicons/tag-16
-  palette:
-    primary: blue
-  logo: 
-  favicon: img/arista_logo.png
+
+markdown_extensions:
+  - abbr
+  - attr_list
+  - md_in_html
+  - admonition
+  - tables
+  - def_list
+  - footnotes
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.snippets
+  - toc: 
+      permalink: true  
+  - pymdownx.tasklist:  
+      custom_checkbox: true
+
+extra_css:
+  - css/extra.css
 
 nav:
   - "Current Newsletter": index.md
@@ -42,4 +53,3 @@ nav:
       - "November 2025": archive/November-2025.md
 
 copyright: Copyright &copy; 2026 Arista Networks. You are receiving this newsletter as a customer of Arista. To stop receiving newsletters please contact akash.takhar@arista.com or abojko@arista.com
-

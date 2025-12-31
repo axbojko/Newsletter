@@ -168,27 +168,28 @@ Click on the boxes below to be directed to Arista's website for additional lists
 --- 
 
 ## __*Software Updates*__
-<figure markdown>
-![Image Placement](img/pictureOfCloudVision.jpeg){: style="height:200px;width:300px"}    
-    <figcaption></figcaption>
-</figure>
+![Image Placememt](img/software_upgrades_condensed.png)
+
 For new code releases, click [here](https://www.arista.com/en/support/software-download){: target="_blank" } 
 
 
-   |  Softwares    | Versions      |  Release Date |
-   | :-----------: | :-----------: | :-----------:
-   | __EOS__           | 4.34.3.1M <br>4.32.8M <br> 4.34.3M <br> 4.35.0F <br>  | November 4th, 2025 <br>October 27th, 2025 <br> October 6th, 2025 <br> October 6th, 2025 <br> 
-   | __CVP__           | Portal 2025.2.1 <br> Appliance 7.0.1 <br> Sensor 1.2.0 <br>    | August 21st, 2025 <br> January 28th, 2025<br> September 8th, 2025 <br>
-   | __DMF__           | 8.8.0 <br >| August 15th, 2025 <br> 
-   | __WLAN__ <br>CV-CUE<br> | <br> 19.0.0 <br>      | <br> July 25th, 2025<br>  
-   | __Arista NDR__         | 5.3.5         | July 16th, 2025
-   | __TerminAttr__    | 1.39.1 <br>       | July 18th, 2025 <br>  
-   | __VeloCloud SD-WAN__  <br>Orchestrator/ Gateway / Edge<br>  | <br>6.4.0 <br>       | <br> May 2nd, 2025 <br> 
+|  Software    | Version      |  Release Date |
+| :-----------: | :-----------: | :-----------:
+| __EOS__           | 4.34.3.1M <br>4.32.8M <br> 4.34.3M <br> 4.35.0F <br>  | November 4th, 2025 <br>October 27th, 2025 <br> October 6th, 2025 <br> October 6th, 2025 <br> 
+| __CVP__           | Portal 2025.2.1 <br> Appliance 7.0.1 <br> Sensor 1.2.0 <br>    | August 21st, 2025 <br> January 28th, 2025<br> September 8th, 2025 <br>
+| __DMF__           | 8.8.0 <br >| August 15th, 2025 <br> 
+| __WLAN__ <br>CV-CUE<br> | <br> 19.0.0 <br>      | <br> July 25th, 2025<br>  
+| __Arista NDR__         | 5.3.5         | July 16th, 2025
+| __TerminAttr__    | 1.39.1 <br>       | July 18th, 2025 <br>  
+| __VeloCloud SD-WAN__  <br>Orchestrator/ Gateway / Edge<br>  | <br>6.4.0 <br>       | <br> May 2nd, 2025 <br> 
 
 
 ---
 
-## __*Software Advisories*__
+## __*Security Advisories and Field Notices*__
+
+![Image Placememt](img/Security_image.png)
+
 Below is a list of advisories that are announced by Arista. To view more details on the specific advisories, please click the links in the middle row.
 
 | Name          | Advisory Link           | Date of Advisory Notice  |
@@ -205,22 +206,9 @@ For a list of the most current advisories and notices, click [Here](https://www.
 
 ---
 
-## __*Product Updates*__
-<figure markdown>
-![Image Placement](img/pictureOfSwitches.jpeg){: style="height:200px;width:400px"}   
-    <figcaption></figcaption>
-</figure>
-**End of Sale** notices are listed below.
+## __*Product Updates - New Releases and End of Sale Notices *__
 
-| Device        | Name           | End Of Sale Date  |
-| :-----------: |:-------------: |     :----:        |
-| Software      | [End of Software for CloudVision Portal 2023.2](https://www.arista.com/en/support/advisories-notices/end-of-support/21412-end-of-software-support-for-cloudvision-portal-2023-2-release-train){: target="_blank" }<br>[End of Software Support for EOS 4.28](https://www.arista.com/en/support/advisories-notices/end-of-support/21275-end-of-software-support-for-eos-4-28){: target="_blank" }<br>[DMF and CCF Deployments on Accton/ Edgecore Switches](https://www.arista.com/en/support/advisories-notices/end-of-support/21094-end-of-support-for-dmf-and-ccf-deployments-on-accton-edgecore-switches){: target="_blank" }<br>[EOS-4.34 and later no longer supported on select switches](https://www.arista.com/en/support/advisories-notices/end-of-support/21089-end-of-software-support-for-7280r-r2-7500r-r2-and-7020r-series){: target="_blank" }<br> | May 27th, 2025 <br> March 14, 2025 <br>January 31st, 2025 <br>January 15th, 2025 <br> |
-| CVP           | [CVP IPAM Application](https://www.arista.com/en/support/advisories-notices/endofsupport){: target="_blank" } <br> [CVP 2023.3](https://www.arista.com/en/support/advisories-notices/end-of-support/21627-end-of-software-support-for-cloudvision-portal-2023-3-release-train){: target="_blank" }          |  July 14th, 2025 <br> June 17th, 2025   |
-| DMF           | [DMF Service Node DCA-DM-SC2](https://www.arista.com/en/support/advisories-notices/end-of-sale/22537-end-of-sale-end-of-life-for-arista-service-node-appliance-dca-dm-sc2){: target="_blank" }          |  October 22nd, 2025           |  
-| CCF           | [CCF Product Line](https://www.arista.com/en/support/advisories-notices/end-of-sale/22430-end-of-sale-end-of-life-for-arista-ccf-product-line){: target="_blank" }          |  October 1st, 2025           |  
-| Switches      | [7010TX-48-DC Switch](https://www.arista.com/en/support/advisories-notices/end-of-sale/22421-end-of-sale-of-the-arista-7010tx-48-dc-switches){: target="_blank" }<br> [7050CX3-32S Switch](https://www.arista.com/en/support/advisories-notices/end-of-sale/22419-end-of-sale-of-the-arista-7050cx3-32s-switches){: target="_blank" }<br> [CCS-720XP-96ZC2 Switch with 4GB DRAM](https://www.arista.com/en/support/advisories-notices/end-of-sale/22403-end-of-sale-of-the-arista-ccs-720xp-96zc2-switches-with-4gb-dram){: target="_blank" }<br> [CCS-720D Switches with 4GB DRAM](https://www.arista.com/en/support/advisories-notices/end-of-sale/22402-end-of-sale-of-the-arista-ccs-720d-switches-with-4gb-dram){: target="_blank" }<br> [CCS-710P-12 Switch](https://www.arista.com/en/support/advisories-notices/end-of-sale/22401-end-of-sale-of-the-arista-ccs-710p-12-switch){: target="_blank" } |  September 19th, 2025<br> September 19th, 2025<br> September 12th, 2025<br> September 12th, 2025<br> September 12th, 2025 |
-| Access Points      | [AP Mounts](https://www.arista.com/en/support/advisories-notices/end-of-sale/22536-end-of-sale-of-ap-mounts-mnt-ap-flat-c130-mnt-ap-flat-c100-mnt-ap-flat-14cm-a){: target="_blank" }<br> |  October 22nd, 2025 <br> | 
-| VeloCloud      | [SASE Secured by Symantec](https://www.arista.com/en/support/advisories-notices/end-of-sale/22072-end-of-sale-life-velocloud-sase-secured-symantec){: target="_blank" }<br> [Software Defined (SD) Access](https://www.arista.com/en/support/advisories-notices/end-of-sale/21653-end-of-sale-end-of-life-for-velocloud-software-defined-sd-access){: target="_blank" } <br> |  August 20th, 2024 <br> July 1st, 2025 | 
+![Image Placememt](img/Product_image.png)
 
 
 
@@ -235,9 +223,29 @@ For a list of the most current advisories and notices, click [Here](https://www.
 
 
 
+**End of Sale** notices are listed below.
+
+| Device        | Name           | End Of Sale Date  |
+| :-----------: |:-------------: |     :----:        |
+| Software      | [End of Software for CloudVision Portal 2023.2](https://www.arista.com/en/support/advisories-notices/end-of-support/21412-end-of-software-support-for-cloudvision-portal-2023-2-release-train){: target="_blank" }<br>[End of Software Support for EOS 4.28](https://www.arista.com/en/support/advisories-notices/end-of-support/21275-end-of-software-support-for-eos-4-28){: target="_blank" }<br>[DMF and CCF Deployments on Accton/ Edgecore Switches](https://www.arista.com/en/support/advisories-notices/end-of-support/21094-end-of-support-for-dmf-and-ccf-deployments-on-accton-edgecore-switches){: target="_blank" }<br>[EOS-4.34 and later no longer supported on select switches](https://www.arista.com/en/support/advisories-notices/end-of-support/21089-end-of-software-support-for-7280r-r2-7500r-r2-and-7020r-series){: target="_blank" }<br> | May 27th, 2025 <br> March 14, 2025 <br>January 31st, 2025 <br>January 15th, 2025 <br> |
+| CVP           | [CVP IPAM Application](https://www.arista.com/en/support/advisories-notices/endofsupport){: target="_blank" } <br> [CVP 2023.3](https://www.arista.com/en/support/advisories-notices/end-of-support/21627-end-of-software-support-for-cloudvision-portal-2023-3-release-train){: target="_blank" }          |  July 14th, 2025 <br> June 17th, 2025   |
+| DMF           | [DMF Service Node DCA-DM-SC2](https://www.arista.com/en/support/advisories-notices/end-of-sale/22537-end-of-sale-end-of-life-for-arista-service-node-appliance-dca-dm-sc2){: target="_blank" }          |  October 22nd, 2025           |  
+| CCF           | [CCF Product Line](https://www.arista.com/en/support/advisories-notices/end-of-sale/22430-end-of-sale-end-of-life-for-arista-ccf-product-line){: target="_blank" }          |  October 1st, 2025           |  
+| Switches      | [7010TX-48-DC Switch](https://www.arista.com/en/support/advisories-notices/end-of-sale/22421-end-of-sale-of-the-arista-7010tx-48-dc-switches){: target="_blank" }<br> [7050CX3-32S Switch](https://www.arista.com/en/support/advisories-notices/end-of-sale/22419-end-of-sale-of-the-arista-7050cx3-32s-switches){: target="_blank" }<br> [CCS-720XP-96ZC2 Switch with 4GB DRAM](https://www.arista.com/en/support/advisories-notices/end-of-sale/22403-end-of-sale-of-the-arista-ccs-720xp-96zc2-switches-with-4gb-dram){: target="_blank" }<br> [CCS-720D Switches with 4GB DRAM](https://www.arista.com/en/support/advisories-notices/end-of-sale/22402-end-of-sale-of-the-arista-ccs-720d-switches-with-4gb-dram){: target="_blank" }<br> [CCS-710P-12 Switch](https://www.arista.com/en/support/advisories-notices/end-of-sale/22401-end-of-sale-of-the-arista-ccs-710p-12-switch){: target="_blank" } |  September 19th, 2025<br> September 19th, 2025<br> September 12th, 2025<br> September 12th, 2025<br> September 12th, 2025 |
+| Access Points      | [AP Mounts](https://www.arista.com/en/support/advisories-notices/end-of-sale/22536-end-of-sale-of-ap-mounts-mnt-ap-flat-c130-mnt-ap-flat-c100-mnt-ap-flat-14cm-a){: target="_blank" }<br> |  October 22nd, 2025 <br> | 
+| VeloCloud      | [SASE Secured by Symantec](https://www.arista.com/en/support/advisories-notices/end-of-sale/22072-end-of-sale-life-velocloud-sase-secured-symantec){: target="_blank" }<br> [Software Defined (SD) Access](https://www.arista.com/en/support/advisories-notices/end-of-sale/21653-end-of-sale-end-of-life-for-velocloud-software-defined-sd-access){: target="_blank" } <br> |  August 20th, 2024 <br> July 1st, 2025 | 
+
+
+
 ---
-# *Feel Free to Reach Out To Us For Your Network Needs* <figure markdown>
-![Image Placement](img/pictureOfNetworks.jpeg){: style="height:300px;width:800px"}  
-    <figcaption></figcaption>
-</figure>
-We thank you for taking the time to read our newsletter today. Feel free to reach out to your SE or ASE for more information or questions regarding your network operations. Until next month, have a good one!
+## *Your Southwest Regional Team is Here to Support Your Success.* 
+
+![Image Placememt](img/Arista_Banner.png)
+
+
+---
+<div style="background-color: #f8f9fa; border-left: 5px solid #004a99; padding: 20px; margin-top: 30px;">
+  <h3 style="color: #004a99; margin-top: 0;">Let's Connect</h3>
+  <p>Thanks for reading! Your local Arista team is here to help you navigate your evolving network needs. Reach out anytime to southwest@arista.com for more information or technical guidance. Until next month—stay connected!</p>
+  <a href="mailto:southwest@arista.com" class="md-button md-button--primary">Contact Your Local Team</a>
+</div>
