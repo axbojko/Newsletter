@@ -163,37 +163,32 @@
     background-color: rgba(0, 74, 153, 0.05) !important;
 }
 
-/* --- 7. MOBILE RESPONSIVENESS (SHRINK TO FIT) --- */
+/* --- 7. MOBILE RESPONSIVENESS (SHRINK TO FIT ALL TABLES) --- */
 
 @media screen and (max-width: 45em) {
-    /* Kill the scroll container */
+    /* Kill the scroll container for all tables */
     .md-typeset__table {
         overflow-x: visible !important; 
         display: block !important;
     }
 
+    /* Force all tables to fit within the screen width */
     .md-typeset table:not([class]) {
         table-layout: auto !important;
         width: 100% !important;
         min-width: 100% !important;
     }
 
-    .md-typeset td, .md-typeset th {
-        /* 1. Shrink font further to prevent wrap */
-        font-size: 0.65rem !important; 
-        
-        /* 2. Tighten padding to the absolute minimum */
-        padding: 6px 2px !important; 
-        
-        /* 3. Try to keep text on one line unless absolutely impossible */
-        white-space: nowrap !important; 
-        
-        /* 4. Remove any minimum widths */
-        min-width: 0 !important; 
+    /* Target all headers and cells to shrink and stay on one line */
+    .md-typeset td, 
+    .md-typeset th {
+        font-size: 0.60rem !important; /* Aggressive shrink to prevent wrapping */
+        padding: 4px 2px !important;   /* Minimal padding to save space */
+        white-space: nowrap !important; /* Force text to stay on one line */
+        min-width: 0 !important;       /* Removes any min-width restrictions */
+        letter-spacing: -0.4px !important; /* Squeeze letters to fit */
     }
 
-    /* 5. Specifically handle the date column if it still wraps */
-    .md-typeset td:last-child {
-        letter-spacing: -0.5px; /* Squeezes characters closer together */
-    }
+    /* Optional: Hide the very last column if it's still causing overflow on tiny screens */
+    /* .md-typeset td:last-child, .md-typeset th:last-child { display: none; } */
 }
