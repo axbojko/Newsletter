@@ -163,27 +163,37 @@
     background-color: rgba(0, 74, 153, 0.05) !important;
 }
 
-/* --- 7. MOBILE RESPONSIVENESS (SCROLL-KILLER) --- */
+/* --- 7. MOBILE RESPONSIVENESS (SHRINK TO FIT) --- */
 
 @media screen and (max-width: 45em) {
-    /* Kill the hidden scroll container that Material MkDocs uses */
+    /* Kill the scroll container */
     .md-typeset__table {
         overflow-x: visible !important; 
         display: block !important;
     }
 
     .md-typeset table:not([class]) {
-        table-layout: auto !important; /* Allow columns to squish */
+        table-layout: auto !important;
         width: 100% !important;
         min-width: 100% !important;
     }
 
     .md-typeset td, .md-typeset th {
-        padding: 8px 4px !important;
-        font-size: 0.75rem !important;
-        /* Force long version strings and dates to wrap to multiple lines */
-        white-space: normal !important;   
-        word-break: break-all !important; 
-        min-width: 0 !important; /* Removes the 150px restriction */
+        /* 1. Shrink font further to prevent wrap */
+        font-size: 0.65rem !important; 
+        
+        /* 2. Tighten padding to the absolute minimum */
+        padding: 6px 2px !important; 
+        
+        /* 3. Try to keep text on one line unless absolutely impossible */
+        white-space: nowrap !important; 
+        
+        /* 4. Remove any minimum widths */
+        min-width: 0 !important; 
+    }
+
+    /* 5. Specifically handle the date column if it still wraps */
+    .md-typeset td:last-child {
+        letter-spacing: -0.5px; /* Squeezes characters closer together */
     }
 }
