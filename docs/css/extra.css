@@ -186,26 +186,26 @@
     width: auto;
     min-width: 150px; /* Prevents columns from getting too squished */
 }
-/* Mobile responsiveness for the Software Table */
+/* Mobile responsiveness for standard Markdown tables */
 @media screen and (max-width: 76.25em) {
-    .software-table {
-        display: block !important; /* Breaks the strict table layout */
+    /* 1. Force the table to respect the screen width */
+    .md-typeset table:not([class]) {
+        display: table !important; 
         width: 100% !important;
         table-layout: auto !important; /* Allows columns to shrink */
+        margin: 10px 0 !important;
     }
 
-    .software-table td, .software-table th {
-        padding: 8px 4px !important; /* Tighter padding for mobile */
-        font-size: 0.85rem; /* Slightly smaller font to fit screen */
+    /* 2. Force the text inside to wrap to a new line */
+    .md-typeset td, .md-typeset th {
+        padding: 8px 4px !important;    /* Tighter spacing for small screens */
+        font-size: 0.8rem;              /* Smaller font to fit more text */
+        white-space: normal !important; /* ALLOWS text to wrap to next line */
+        word-break: break-word !important; /* Breaks long strings if needed */
     }
 
-    /* Prevent the 'EOS' or 'CVP' column from taking up too much space */
-    .software-table td[rowspan] {
-        width: 80px !important;
-        min-width: 80px !important;
+    /* 3. Ensure the container doesn't create a scrollbar */
+    .md-typeset__table {
+        overflow-x: hidden !important; 
     }
-}
-.table-wrapper {
-    width: 100%;
-    overflow-x: hidden; /* Disables the horizontal scroll */
 }

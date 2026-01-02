@@ -186,19 +186,6 @@
     width: auto;
     min-width: 150px; /* Prevents columns from getting too squished */
 }
-/* Style the Primary CTA Button to Arista Navy */
-.md-typeset .md-button--primary {
-    background-color: #004a99 !important;
-    border-color: #004a99 !important;
-    color: #ffffff !important; /* Force text to white */
-}
-
-/* Add a hover effect for a professional feel */
-.md-typeset .md-button--primary:hover {
-    background-color: #003a7a !important; /* Slightly darker navy on hover */
-    border-color: #003a7a !important;
-    color: #ffffff !important;
-}
 /* Mobile responsiveness for the Software Table */
 @media screen and (max-width: 76.25em) {
     .software-table {
@@ -217,4 +204,8 @@
         width: 80px !important;
         min-width: 80px !important;
     }
+}
+.table-wrapper {
+    width: 100%;
+    overflow-x: hidden; /* Disables the horizontal scroll */
 }
