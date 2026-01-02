@@ -1,52 +1,59 @@
 /* --- 1. HEADER & LOGO BRANDING --- */
 
-
-
-/* Force Header to Arista Navy */
 .md-header {
     background-color: #004a99 !important;
 }
 
-/* Align Logo and Title to the far left */
 .md-header__inner {
     display: flex;
     justify-content: flex-start !important;
 }
 
-/* Make Logo prominent and White */
 .md-logo img {
-    height: 2.0rem; /* Prominent size */
+    height: 2.0rem;
     width: auto;
-    filter: brightness(0) invert(1); /* Turns dark logo to white */
+    filter: brightness(0) invert(1);
     margin-right: 1rem;
     vertical-align: middle;
 }
 
-/* Style Header Title next to logo */
 .md-header__title {
     font-weight: 700;
     color: #ffffff !important;
     margin-left: 0 !important;
 }
 
-/* Push Search Bar to the far right */
 .md-search {
     margin-left: auto;
 }
 
-/* Fix Search bar transparency for contrast */
 .md-search__form {
     background-color: rgba(255, 255, 255, 0.15) !important;
 }
 
+.md-search__input {
+    color: #ffffff !important;
+}
+
+.md-search__input::placeholder {
+    color: rgba(255, 255, 255, 0.7) !important;
+    opacity: 1;
+}
+
+.md-search__icon {
+    color: #ffffff !important;
+}
+
+.md-search__input:focus {
+    background-color: rgba(255, 255, 255, 0.25) !important;
+}
+
 /* --- 2. NAVIGATION & SIDEBAR --- */
 
-/* Sticky sidebar adjustment */
 .md-sidebar {
     top: 48px;
 }
 
-/* Sidebar Link Colors */
 .md-nav__link {
     color: rgba(0, 74, 153, 0.8) !important;
 }
@@ -59,7 +66,6 @@
 
 /* --- 3. BODY CONTENT & LINKS --- */
 
-/* Standard Text Links */
 .md-typeset a {
     color: #004a99;
 }
@@ -69,7 +75,6 @@
     text-decoration: underline;
 }
 
-/* Button Styling (Read Blog, etc.) */
 .md-typeset .md-button {
     border-color: #004a99;
     color: #004a99;
@@ -95,7 +100,6 @@
     color: #ffffff !important;
 }
 
-/* Ensure Tech Tip Icon is White */
 .md-typeset .admonition-title::before, 
 .md-typeset summary::before {
     background-color: #ffffff !important;
@@ -105,7 +109,6 @@
 
 /* --- 5. UI ELEMENTS --- */
 
-/* Back to Top Button */
 .md-top {
     background-color: #004a99;
     color: #ffffff !important;
@@ -114,98 +117,73 @@
 .md-top svg {
     fill: #ffffff !important;
 }
-/* 1. Change the search icon and typed text color to white */
-.md-search__input {
-    color: #ffffff !important;
-}
 
-/* 2. Change the "Search" placeholder text color to white/light gray */
-.md-search__input::placeholder {
-    color: rgba(255, 255, 255, 0.7) !important;
-    opacity: 1; /* Ensures browser defaults don't fade it too much */
-}
+/* --- 6. TABLE STYLING & ZEBRA STRIPES --- */
 
-/* 3. Fix the search icon color next to the input */
-.md-search__icon {
-    color: #ffffff !important;
-}
-
-/* 4. Optional: Highlight the search bar slightly more when clicked */
-.md-search__input:focus {
-    background-color: rgba(255, 255, 255, 0.25) !important;
-}
-/* 1. Force tables to span the full width of the content area */
+/* Force tables to span the full width of the content area */
 .md-typeset table:not([class]) {
-    display: table;
-    width: 100%;
-    word-break: normal;
+    display: table !important;
+    width: 100% !important;
     border-collapse: collapse;
+    margin: 20px 0;
+    table-layout: fixed; /* Keeps columns even on desktop */
 }
 
-/* 2. Style the Header Row (Arista Navy) */
+/* Style the Header Row (Arista Navy) */
 .md-typeset thead {
-    background-color: #004a99;
+    background-color: #004a99 !important;
     color: #ffffff;
 }
 
 .md-typeset thead th {
     color: #ffffff !important;
     font-weight: 700;
-    padding: 12px;
+    padding: 12px !important;
+    text-align: center !important;
 }
 
-/* 3. Add Zebra Striping (Alternating Row Colors) */
+/* Zebra Striping */
 .md-typeset tbody tr:nth-child(odd) {
-    background-color: #ffffff; /* White rows */
+    background-color: #ffffff;
 }
 
 .md-typeset tbody tr:nth-child(even) {
-    background-color: #f8f9fa; /* Light gray rows */
+    background-color: #f8f9fa !important;
 }
 
-/* 4. Add subtle borders for a neat look */
+/* Standard Cell Styling */
 .md-typeset td {
     padding: 12px;
     border-bottom: 1px solid #e9ecef;
+    text-align: center;
 }
 
-/* 5. Highlight row on hover (User experience) */
+/* Highlight row on hover */
 .md-typeset tbody tr:hover {
     background-color: rgba(0, 74, 153, 0.05) !important;
 }
-/* Force standard Markdown tables to span the full width of the page */
-.md-typeset table:not([class]) {
-    display: table;
-    width: 100% !important;
-    border-collapse: collapse;
-    margin: 20px 0;
-}
 
-/* Ensure table cells expand to fill that width evenly */
-.md-typeset td, .md-typeset th {
-    width: auto;
-    min-width: 150px; /* Prevents columns from getting too squished */
-}
-/* Mobile responsiveness for standard Markdown tables */
-@media screen and (max-width: 76.25em) {
-    /* 1. Force the table to respect the screen width */
-    .md-typeset table:not([class]) {
-        display: table !important; 
-        width: 100% !important;
-        table-layout: auto !important; /* Allows columns to shrink */
-        margin: 10px 0 !important;
-    }
+/* --- 7. MOBILE RESPONSIVENESS (SCROLL-KILLER) --- */
 
-    /* 2. Force the text inside to wrap to a new line */
-    .md-typeset td, .md-typeset th {
-        padding: 8px 4px !important;    /* Tighter spacing for small screens */
-        font-size: 0.8rem;              /* Smaller font to fit more text */
-        white-space: normal !important; /* ALLOWS text to wrap to next line */
-        word-break: break-word !important; /* Breaks long strings if needed */
-    }
-
-    /* 3. Ensure the container doesn't create a scrollbar */
+@media screen and (max-width: 45em) {
+    /* Kill the hidden scroll container that Material MkDocs uses */
     .md-typeset__table {
-        overflow-x: hidden !important; 
+        overflow-x: visible !important; 
+        display: block !important;
+    }
+
+    .md-typeset table:not([class]) {
+        table-layout: auto !important; /* Allow columns to squish */
+        width: 100% !important;
+        min-width: 100% !important;
+    }
+
+    .md-typeset td, .md-typeset th {
+        padding: 8px 4px !important;
+        font-size: 0.75rem !important;
+        /* Force long version strings and dates to wrap to multiple lines */
+        white-space: normal !important;   
+        word-break: break-all !important; 
+        min-width: 0 !important; /* Removes the 150px restriction */
     }
 }
