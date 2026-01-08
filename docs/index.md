@@ -75,7 +75,7 @@ Please note – should you have devices without the embedded enrollment token, y
 <br>
 **Process**
 
-All new Arista switches and routers shipped, as well as any devices without a startup config present, automatically enters ZTP mode at boot. This enables the device to obtain an IP address through any front facing or management interface and to connect and self-register to your organization's CvaaS instance. You simply connect it to the network.
+All new Arista switches and routers shipped, as well as any devices without a startup config present, automatically enters ZTP mode at boot. This enables the device to obtain an IP address through any front facing or management interface and to connect and self-register to your organization's CVaaS instance. You simply connect it to the network.
 After receiving a DHCP address and connecting to CVaaS at www.arista.io, the automated onboarding process will begin.
 
 
@@ -119,7 +119,7 @@ The 710P then receives a DHCP IP address, and immediately connects to apiserver.
 ```
 
 <br>
-After enrolment and registration in CVaaS Studios inventory it is identified by an automatically given host name (sw-192.168.10.76) based on the DHCP IP, and its serial number (WTW24520453). After assigning the designed configuration to the device, you will see it show up as out of compliance. 
+After enrollment and registration in CVaaS Studios inventory it is identified by an automatically given host name (sw-192.168.10.76) based on the DHCP IP, and its serial number (WTW24520453). After assigning the designed configuration to the device, you will see it show up as out of compliance. 
 
 <br>
 
@@ -213,7 +213,7 @@ Click on the boxes below to be directed to Arista's website for additional lists
 ## __*Software Updates*__
 ![Image Placememt](img/software_upgrades_condensed.png)
 
-*Stay informed on the latest software updates across all arista products and services.*
+*Stay informed on the latest software updates across all Arista products and services.*
 
 |  Software    | Version      |  Release Date |
 | :-----------: | :-----------: | :-----------:
@@ -275,6 +275,23 @@ Click on the boxes below to be directed to Arista's website for additional lists
 <br>
 
 [View All Latest End of Sale & Support Notices](https://www.arista.com/en/support/advisories-notices/endofsale){: .md-button .md-button--primary target="_blank" }
+
+
+
+
+
+---
+
+## Have you heard? 
+Arista has revamped their certifications! The new **Arista Certified Engineer (ACE)** program is now organized by specific tracks like Cloud Data Center, Campus, and Automation to better align with your job role.
+
+![Image Placememt](img/ACE.png)
+
+[Start your ACE journey now](https://www.training.arista.com/){ .md-button .md-button--primary target="_blank" }
+
+---
+
+
 
 ---
 ## *Your Southwest Regional Team is Here to Support Your Success.* 

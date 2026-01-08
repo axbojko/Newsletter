@@ -177,7 +177,47 @@
     background-color: rgba(0, 74, 153, 0.05) !important;
 }
 
-/* --- 7. MOBILE RESPONSIVENESS --- */
+/* --- 7. IMAGE RENDERING (ANTI-BLUR) --- */
+
+.md-typeset img {
+    image-rendering: -webkit-optimize-contrast !important; /* Safari/Chrome */
+    image-rendering: crisp-edges !important;               /* Firefox */
+    -ms-interpolation-mode: nearest-neighbor;               /* IE */
+}
+
+/* --- 8. NEWSLETTER CONTENT FORMATTING --- */
+
+/* Force terminal text to wrap without splitting words */
+.md-typeset pre code {
+    white-space: pre-wrap !important;       /* Wraps text to the next line */
+    word-break: break-word !important;      /* Only breaks at spaces/hyphens if possible */
+    word-wrap: break-word !important;       /* Legacy support */
+    overflow-x: hidden !important;          /* No horizontal scrolling */
+    display: block;
+}
+
+/* Target the figure container to remove internal padding */
+.md-typeset figure {
+    margin-top: 1em;    /* Space above the image */
+    margin-bottom: 1em; /* Space below the caption */
+}
+
+/* Remove bottom margin from the image itself */
+.md-typeset figure img {
+    margin-bottom: 0 !important;
+    display: block; /* Removes tiny descender gap */
+}
+
+/* Tighten image captions */
+.md-typeset figure figcaption {
+    margin-top: -10px !important; 
+    padding-top: 0 !important;
+    font-style: italic;
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* --- 9. MOBILE RESPONSIVENESS --- */
 
 @media screen and (max-width: 45em) {
     .md-typeset__table {
@@ -200,4 +240,3 @@
         letter-spacing: -0.4px !important;
     }
 }
-
