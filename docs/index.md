@@ -59,7 +59,7 @@ By: Morten Sefeld, Systems Engineer
 <br>
 
 **An article in two parts.**
-Tasks, such as, onboarding a new device or replacing an existing device in a networking fabric should be simple and trivial tasks, except it is not in far too many organizations today. Touching the network is a necessary evil that traditionally is looked at as invasive and complex, introducing risk and potential outage, forcing many organizations to hire expensive outside consultants to perform these tasks, among others. 
+Tasks, such as, onboarding a new device or replacing an existing device in a networking fabric should be simple and trivial tasks, except it is not in far too many organizations today. Touching the network is traditionally looked at as a necessary evil, invasive and complex, that introduces risk and potential outages, forcing many organizations to hire expensive outside consultants to perform these tasks, among others. 
 
 In this article we will talk about how to safely and easily onboard and replace an Arista device using Arista CloudVision as a Service (CVaaS) Zero Touch Provisioning (ZTP) and Zero Touch Replacement (ZTR) Studios. No copying of configurations to text-files, USB sticks, or external consultants necessary. CloudVision Studios truly make these tasks as safe and simple as zero touch.
 
