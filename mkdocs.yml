@@ -1,5 +1,5 @@
 site_name: Arista Newsletter
-site_url: https://axbojko.github.io/Newsletter/
+site_url: https://Arista-Southwest-Region.github.io/Newsletter/
 repo_name: aristasouthwest/Newsletter
 docs_dir: docs/
 edit_uri: edit/main/docs/
@@ -55,6 +55,7 @@ extra_css:
 nav:
   - "Current Newsletter": index.md
   - "Past Newsletters":
+      - "January 2026": archive/January-2026.md
       - "November 2025": archive/November-2025.md
 
 copyright: Copyright &copy; 2026 Arista Networks. You are receiving this newsletter as a customer of Arista. To stop receiving newsletters please contact akash.takhar@arista.com or abojko@arista.com
