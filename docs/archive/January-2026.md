@@ -80,7 +80,7 @@ After receiving a DHCP address and connecting to CVaaS at www.arista.io, the aut
 
 
 <figure markdown="span">
-  ![First Pic](img/Jan-26-1.png)
+  ![First Pic](../img/Jan-26-1.png)
   <figcaption>Zero Touch Provisioning - Process Illustration</figcaption>
 </figure>  
 
@@ -124,7 +124,7 @@ After enrollment and registration in CVaaS Studios inventory it is identified by
 <br>
 
 <figure markdown="span">
-  ![First Pic](img/Jan-26-2.png)
+  ![First Pic](../img/Jan-26-2.png)
   <figcaption>Device Config Out of Compliance - CloudVision Example</figcaption>
 </figure>  
 
@@ -135,7 +135,7 @@ This is because CVaaS and the EOS real-time streaming telemetry daemon compares 
 <br>
 
 <figure markdown="span">
-  ![First Pic](img/Jan-26-3.png){ width="800" }
+  ![First Pic](../img/Jan-26-3.png){ width="800" }
   <figcaption>Successful Change Control - CloudVision Example</figcaption>
 </figure>
 
@@ -159,7 +159,7 @@ The above image shows that the 710P-16P has successfully received its config scr
 The device is back, and shows as compliant and active in CVaaS inventory
 
 <figure markdown="span">
-  ![First Pic](img/Jan-26-4.png)
+  ![First Pic](../img/Jan-26-4.png)
   <figcaption>Device in Compliance - CloudVision Example</figcaption>
 </figure>  
 
@@ -211,7 +211,7 @@ Click on the boxes below to be directed to Arista's website for additional lists
 --- 
 
 ## __*Software Updates*__
-![Image Placememt](img/software_upgrades_condensed.png)
+![Image Placememt](../img/software_upgrades_condensed.png)
 
 *Stay informed on the latest software updates across all Arista products and services.*
 
@@ -234,7 +234,7 @@ Click on the boxes below to be directed to Arista's website for additional lists
 
 ## __* Security Advisories and Field Notices*__
 
-![Image Placememt](img/Security_image_2.png)
+![Image Placememt](../img/Security_image_2.png)
 
 *Stay informed on the latest platform security and field notice updates.*
 
@@ -258,7 +258,7 @@ Click on the boxes below to be directed to Arista's website for additional lists
 
 ## __* Product Updates*__
 
-![Image Placememt](img/Product_image.png)
+![Image Placememt](../img/Product_image.png)
 
 
 *Stay up to date on all new Arista Product Releases, as well as End of Sale/End of Support Notices.*
@@ -285,7 +285,7 @@ Click on the boxes below to be directed to Arista's website for additional lists
 ## Have you heard? 
 Arista has revamped their certifications! The new **Arista Certified Engineer (ACE)** program is now organized by specific tracks like Cloud Data Center, Campus, and Automation to better align with your job role.
 
-![Image Placememt](img/ACE.png)
+![Image Placememt](../img/ACE.png)
 
 [Start your ACE journey now](https://www.training.arista.com/){ .md-button .md-button--primary target="_blank" }
 
@@ -296,7 +296,7 @@ Arista has revamped their certifications! The new **Arista Certified Engineer (A
 ---
 ## *Your Southwest Regional Team is Here to Support Your Success.* 
 
-![Image Placememt](img/Arista_Banner.png)
+![Image Placememt](../img/Arista_Banner.png)
 
 
 ---
