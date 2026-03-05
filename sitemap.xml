@@ -2,14 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://Arista-Southwest-Region.github.io/Newsletter/</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-03-05</lastmod>
+    </url>
+    <url>
+         <loc>https://Arista-Southwest-Region.github.io/Newsletter/archive/February-2026/</loc>
+         <lastmod>2026-03-05</lastmod>
     </url>
     <url>
          <loc>https://Arista-Southwest-Region.github.io/Newsletter/archive/January-2026/</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-03-05</lastmod>
     </url>
     <url>
          <loc>https://Arista-Southwest-Region.github.io/Newsletter/archive/November-2025/</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-03-05</lastmod>
     </url>
 </urlset>
