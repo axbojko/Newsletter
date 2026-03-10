@@ -89,7 +89,7 @@ Today, networks are further evolving, with AI (Artificial Intelligence) leading 
 
 With NetDL, Arista offers a centralized data store containing high quality data relevant to your network. This is a game changer for creating a powerful, accurate AI interface. 
 
-Ask AVA, Arista's very own conversational AI interface, is built into CloudVision, and designed to be the ultimate co-pilot of every network engineer. Unlike generic AI chatbots, Ask AVA is purpose built for networking and learns from a vast foundation of high quality data courtesy of NetDL.
+Ask AVA, Arista's very own conversational AI interface, is built into CloudVision, and designed to be the ultimate colleague of every network engineer. Unlike generic AI chatbots, Ask AVA is purpose built for networking and learns from a vast foundation of high quality data courtesy of NetDL.
    
 
 Ask AVA changes the dynamic from "hunting for answers" to simply "asking for answers". 
@@ -208,7 +208,7 @@ While there are many different POCs that are conducted all the time, there are (
 | **SE-Led** | Highly customized tracks driven by specific customer use cases. Topology, hardware, and test plans are developed by the CE Team alongside the customer. | <ul><li>Testing complex network migrations</li><li>Displaying newly developed EOS features</li><li>Showcasing interoperability with existing tech</li></ul> |
 
 
-Besides these, there are a myriad of standard and custom POCs that can be completed. For example, we have POCs for Arista’s monitoring solution (DMF) (Link) and custom POCs that are done to display new architectures such as Arista new WiFi Architecture VESPA (Link). Your local account team is happy to discuss how best to deliver a POC that will help to showcase and test the exact features and scenarios you are wanting to see. 
+Besides these, there are a myriad of standard and custom POCs that can be completed. For example, we have POCs for Arista’s monitoring solution [DMF](https://www.arista.com/en/products/danz-monitoring-fabric){ target="_blank" } and custom POCs that are done to display new architectures such as Arista new WiFi Architecture [VESPA](https://www.arista.com/en/company/news/press-release/22998-pr-20251210){ target="_blank" }. Your local account team is happy to discuss how best to deliver a POC that will help to showcase and test the exact features and scenarios you are wanting to see. 
 
 <br>
 
