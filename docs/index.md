@@ -54,7 +54,7 @@ We welcome your feedback on the newsletter. If you have any ideas or suggestions
 ---
 ## Featured Articles
 
-### Ask AVA: Your CloudVision Co-Pilot
+### Ask AVA: Your Ultimate CloudVision Colleague
 By: Alex Bojko, Advisory Systems Engineer 
 <br>
 
@@ -108,6 +108,19 @@ Ask AVA is currently a beta feature that can be enabled in the Settings > Featur
 
 <br>
 
+Once Ask AVA is enabled for your CloudVision as a Service tenant, navigate to any tab within CloudVision to find access to Ask AVA via the "A" in the top right panel of your screen. 
+
+<br>
+
+<figure markdown="span">
+  ![First Pic](img/Mar-26-6.png)
+  <figcaption>CloudVision - How to Access Ask AVA</figcaption>
+</figure>  
+
+<br>
+
+
+
 **Current Capabilities of Ask AVA**
 
 Ask AVA acts as your AI co-pilot for network operations, streamlining complex workflows into simple conversational queries. Instead of clicking through multiple dashboards, you can instantly query for real-time insights, run diagnostics, and locate documentation. Here is a look at what Ask AVA can do for you today (and this is only the start):
@@ -125,12 +138,40 @@ Ask AVA acts as your AI co-pilot for network operations, streamlining complex wo
 
 Once enabled, you can start using the Ask AVA beta feature in your CVaaS (CloudVision as a Service) tenant today. Not only can Ask AVA assist you in troubleshooting network issues, it can also provide you with help answering design or implementation questions while providing you with CloudVision help center documentation as a reference.  
 
+Below is a list of example questions you can leverage to get hands on practice with Ask AVA today.
+
 <br>
 
 <figure markdown="span">
   ![First Pic](img/Mar-26-3.png)
-  <figcaption>Example of Ask AVA Conversational Output  </figcaption>
+  <figcaption>Ask AVA Example Questions</figcaption>
 </figure> 
+
+<br>
+
+Ask AVA can also perform ping and traceroute commands on devices, providing detailed table based results. This allows you to instruct AVA to issue these commands on any one of your devices all from the comfort of CloudVision. 
+
+<br>
+
+<figure markdown="span">
+  ![First Pic](img/Mar-26-4.png)
+  <figcaption>Ask AVA - Example Traceroute Output</figcaption>
+</figure> 
+
+<br>
+
+Lastly, whether you are logging on for the first time in the morning, or returning from a week of vacation, Ask AVA can provide you with a detailed list of active network events, with recommendations on which issues to address first.
+
+<br>
+
+<figure markdown="span">
+  ![First Pic](img/Mar-26-5.png)
+  <figcaption>Ask AVA - Example Event Summary Output</figcaption>
+</figure> 
+
+<br>
+
+
 
 Speak to your local account team about the capabilities of Ask AVA—we welcome any and all feedback!
 
