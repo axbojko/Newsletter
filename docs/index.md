@@ -9,7 +9,7 @@ description: Stay up to date with the latest Arista EOS releases, security advis
 
 # Arista Southwest Region Newsletter
 
-Welcome to the June 2026 Newsletter for Arista customers in the U.S. Southwest Region! 
+Welcome to the August 2026 Newsletter for Arista customers in the U.S. Southwest Region! 
 
 We welcome your feedback on the newsletter. If you have any ideas or suggestions on how to improve the newsletter, please reach out to [southwest@arista.com](mailto:southwest@arista.com){: target="_blank" }.  
 
@@ -20,6 +20,14 @@ We welcome your feedback on the newsletter. If you have any ideas or suggestions
 
 <div class="grid cards" markdown>
 
+-   **The Unified Edge for a Secure Branch**
+    ---
+    *Jul 21st, 2026: Brendan Gibbs explains how modernizing branch networks requires eliminating "box sprawl" by converging SD-WAN, security, LAN, and Wi-Fi into a unified, AI-driven platform.*
+    
+    [Read Blog](https://blogs.arista.com/blog/the-unified-edge-for-a-secure-branch){: target="_blank" }
+
+
+
 -   **Three Genius Ideas for AI Fabrics**
     ---
     *June 9th, 2026: Kenneth Duda and Alan Judge detail how multi-planar leaf-spine networks, Multipath Reliable Connection (MRC), and SRv6 are transforming scale-out AI fabrics. Together, these three innovations provide massive scale, superior load balancing, and seamless resilience for the world's most advanced AI infrastructures.*
@@ -27,11 +35,7 @@ We welcome your feedback on the newsletter. If you have any ideas or suggestions
     [Read Blog](https://blogs.arista.com/blog/three-genius-ideas-for-ai-fabrics){: target="_blank" }
 
 
--   **The Cognitive Campus Center Journey**
-    ---
-    *May 26th, 2026: Kumar Srikantan and Sriram Venkiteswaran reflect on the Arista campus evolution journey that has led to Arista being named a Leader in the 2026 Gartner Magic Quadrant for Enterprise Wired and Wireless LAN.*
-    
-    [Read Blog](https://blogs.arista.com/blog/the-cognitive-campus-center-journey){: target="_blank" }
+
 
 
 
@@ -66,82 +70,113 @@ We welcome your feedback on the newsletter. If you have any ideas or suggestions
 ---
 ## Featured Articles
 
-### Unlock Your Network's Potential: A Guide to the Arista Tech Library
-By: Alex Bojko, Advisory Systems Engineer
+###  Troubleshooting BGP EVPN VxLAN Issues Through CloudVision
+By: Murthy Devarakonda, Manager, Systems Engineering
 <br>
 
-In the fast-evolving world of cloud and AI-driven networking, staying ahead requires instant access to accurate, actionable, and deep technical knowledge. Finding relevant, detailed, accurate documentation that actually helps you understand the topic at hand can prove to be a challenge.
+Deploying a datacenter or campus network fabric using BGP and EVPN VxLAN can be simplified by utilizing features like CloudVision Studios or the Arista AVD data model. These tools can dramatically accelerate deployment times, shifting timelines from days to hours. The process involves gathering essential fabric details—such as BGP ASN numbers, IP addresses, VRFs, and VLANs—and inputting them into either CloudVision Studios or AVD to output Arista validated configurations for large-scale deployment.
 
-The Arista Tech Library was created  to be your one stop shop for relevant, accurate, and detailed documentation. More than just a repository of PDFs, the Tech Library serves as a dynamic launchpad for designing, deploying, and optimizing modern high-performance networks that follow arista best practice guidelines. 
+Once deployment is finished, the primary objective shifts to empowering your operations team. By leveraging CloudVision, they can resolve network issues efficiently and manage incremental updates effectively. To help minimize the mean-time-to-repair (MTTR), consider implementing the following strategy: organize devices using distinct tags to streamline and focus troubleshooting activities. A visual example of this setup is available in the screen below.
 
-Whether you are looking to scale out a 1600G AI fabric or secure a distributed campus network, here is a breakdown of the premier offerings available within the Arista Tech Library ecosystem.
-
-<br>
-
-**Comprehensive Design & Deployment Guides**
-
-At the heart of the Tech Library are meticulously engineered Design and Deployment Guides. These are not just generic instruction manuals; they provide production-ready blueprints for complex network topologies.
-
-* **Data Center & AI Fabrics:** Get step-by-step guidance on deploying cutting-edge architectures, such as standards-based BGP EVPN/VXLAN multihoming, to ensure non-blocking, line-rate performance for enterprise and public cloud scaling.
-
-* **Cognitive Campus & WLAN:** Access deployment frameworks designed for distributed enterprise workspaces, helping you optimize wireless traffic control, achieve hitless Smart System Upgrades (SSU), as well as other campus related topics.
-
-* **Zero-Touch Operations:** Utilize specialized zero touch workflows, such as Zero Touch Provisioning for initial device deployment and Zero Touch Replacement for day two switch swap operations (ZTP / ZTR).
 
 <br>
 
 <figure markdown="span">
-  ![First Pic](img/June-26-1.png)
-  <figcaption>Tech Library Documentation</figcaption>
+  ![First Pic](img/Aug-26-1.png)
+  <figcaption>CloudVision Tags Example</figcaption>
 </figure> 
 
 <br>
 
 
-**Interactive Tech Library Labs**
-
-Arista bridges the gap between theory and practice through new "Tech Library Labs". When reviewing a complex Deployment Guide topology, users don’t have to guess if their configuration will work. With a single click, engineers can instantiate a fully virtualized, pre-configured lab environment that mirrors the exact documentation topology. 
-
-This hands-on sandbox allows you to take topics discussed in the deployment guides and practice implimenting those exact configuration changes using containerized EOS (cEOS) instances, before touching production hardware.
+CloudVision serves as a single pane of glass for all network state and telemetry, which your operations team can fully leverage. By creating a custom dashboard to monitor critical KPIs and setting it as their default landing page, the team can easily evaluate overall network health. From this central dashboard, operations can drill down further into the various sections of CloudVision.
 
 <br>
 
 <figure markdown="span">
-  ![First Pic](img/June-26-2.png)
-  <figcaption>L3LS EVPN VXLAN Deployment Guide Example Topology</figcaption>
+  ![First Pic](img/Aug-26-2.png)
+  <figcaption>CloudVision Data Center Health Telemetry Dashboard</figcaption>
 </figure> 
 
 <br>
 
+To begin the troubleshooting process, navigate to the topology view. You can narrow down the focus area by utilizing the device tags created earlier: click on Filters → Add Filters → Device Tags. An example of this view is shown in the screenshot below.
+
+<br>
+
+<figure markdown="span">
+  ![First Pic](img/Aug-26-3.png)
+  <figcaption>CloudVision Topology View - Device Tag Filter</figcaption>
+</figure> 
+
+<br>
+
+Within this topology view, you can overlay the following details to assist with troubleshooting:
+
+* **Active Events:** Displays real-time events for each device in the topology.
+* **Bandwidth Utilization:** Highlights link bandwidth usage via a heatmap, where clicking an individual link displays its exact numerical values.
+* **Discard Rates:** Details the packet discard rates across all network links using a heatmap, with link-specific rates available upon clicking.
+* **Error Rate:** Illustrates link error rates through a heatmap, allowing you to click any link to view its specific error rate.
+* **Operational Status:** Indicates the current operational state of network links.
+* **Traffic Throughput:** Outlines the traffic throughput metrics for each individual link.
 
 
-**Knowledge Across All Network Domains**
 
-The technical library is designed to include documentation from all network domains. This includes:
+<br>
 
-* Data Center
+<figure markdown="span">
+  ![First Pic](img/Aug-26-4.png)
+  <figcaption>CloudVision Topology View - Bandwidth Utilization Overlay</figcaption>
+</figure> 
 
-* Campus
+<br>
 
-* AI Center
+The end-to-end path of network traffic can be traced using the topology view's traffic flow animations. Operations teams can utilize this data to spot potential flow anomalies and confirm ideal paths.
 
-* EOS
+<br>
 
-* Observability 
+<figure markdown="span">
+  ![First Pic](img/Aug-26-5.png)
+  <figcaption>CloudVision Topology View - End to End Traffic Flow</figcaption>
+</figure> 
 
-* Service Provider
+<br>
 
-* WAN
+By moving from the active event overlay into the Events section of CloudVision, you can access comprehensive details on various network events. In this view, you can filter events using specific conditions and adjust the time horizon to zero in on relevant alerts. Additionally, applying tags helps narrow your focus to a particular network, streamlining the path to root cause identification.
 
-This ensures that regardless of the network domain you operate or manage, the Tech Library will have content relevant to your expertise. 
+<br>
 
-The Arista Tech Library is engineered to provide you with relevant, accurate documentation, that follows best practices and meets the needs of modern network designs and implementations. By combining traditional documentation with innovative, on-demand lab environments and a robust peer community, the Tech Library can serve as your go to destination for information spanning all network domains. 
+<figure markdown="span">
+  ![First Pic](img/Aug-26-6.png)
+  <figcaption>CloudVision Events Summary</figcaption>
+</figure> 
 
-Visit the Arista Tech Library today:
+<br>
 
-* [Arista Tech Library](https://tech-library.arista.com/ ){ target="_blank" }
+Ultimately, to pinpoint network problems right at the device level, you can make use of the interface counter and EVPN details provided on each device's specific page.
 
-*NOTE: Information contained within Tech Library is readily accessible for current Arista customers. If you are unable to access information contained within Tech Library, please reach out to your local account team for assistance.* 
+<br>
+
+<figure markdown="span">
+  ![First Pic](img/Aug-26-7.png)
+  <figcaption>CloudVision EVPN Dashboard</figcaption>
+</figure> 
+
+<br>
+
+For a detailed demonstration of this workflow, please reach out to your Arista account team.
+
+
+
+
+
+
+To learn more about any of the CloudVision concepts covered in this article, click the link below:
+
+* [Arista CloudVision](https://www.arista.io/help/articles/overview-cloudvision ){ target="_blank" }
+
+
+
 
 ---
  
@@ -183,13 +218,15 @@ Click on the boxes below to be directed to Arista's website for additional lists
 
 |  Software    | Version      |  Release Date |
 | :-----------: | :-----------: | :-----------: |
-| __EOS__           | 4.36.1F <br> 4.33.7.1 | June 17th, 2026 <br> June 16th, 2026 |
-| __CVP__           | Portal 2026.1.1 <br> Appliance 7.1.1 <br> Sensor 1.4.1 | June 15th, 2026 <br> April 8th, 2026 <br> June 15th, 2026 |
+| __EOS__           | 4.35.6M <br> 4.34.8M <br> 4.33.10M <br> 4.36.2F | August 18th, 2026 <br> August 18th, 2026 <br> August 18th, 2026 <br> August 15th, 2026 |
+| __CVP__           | Portal 2026.2.0 <br> Appliance 7.2.0 <br> Sensor 1.4.2 | June 23rd, 2026 <br> July 2nd, 2026 <br> July 8th, 2026 |
 | __DMF__           | 8.10.0 | April 22nd, 2026 |
-| __CV-CUE__         | 21.0.0 | January 16th, 2026 |
+| __CV-CUE__         | 2026.2.0 | May 21st, 2026 |
 | __Arista NDR__     | 5.3.5 | July 16th, 2025 |
-| __TerminAttr__     | 1.42.1 | February 4th, 2026 |
-| __VeloCloud SD-WAN__ <br>Orchestrator/Gateway/Edge | 6.4.1 | December 19th, 2025 |
+| __TerminAttr__     | 1.45.1 | July 10th, 2026 |
+| __VeloCloud SD-WAN__ <br>Orchestrator/Gateway/Edge | 7.0.0 | July 2026 |
+
+
 
 [View All Latest Software Updates](https://www.arista.com/en/support/software-download){: .md-button .md-button--primary target="_blank" }
 
@@ -202,14 +239,12 @@ Click on the boxes below to be directed to Arista's website for additional lists
 *Stay informed on the latest platform security and field notice updates. For more information on Arista's statement on AI-Enhanced Security and Resilience regarding Mythos and project Glasswing, [click here.](https://www.arista.com/assets/data/pdf/glasswing/QA-Project-Mythos-Glasswing.pdf){: target="_blank" }*
 
 ### **Security Advisories**
-* **TerminAttr** — [Security Advisory 143](https://www.arista.com/en/support/advisories-notices/security-advisory/24112-security-advisory-0143){: target="_blank" } <br> *(June 23rd, 2026)*
-* **Next-Hop Redirection Features** — [Security Advisory 142](https://www.arista.com/en/support/advisories-notices/security-advisory/24111-security-advisory-0142){: target="_blank" } <br> *(June 23rd, 2026)*
-* **Access Point AirSnitch Attacks** — [Security Advisory 141](https://www.arista.com/en/support/advisories-notices/security-advisory/24108-security-advisory-0141){: target="_blank" } <br> *(June 16th, 2026)*
-* **Secure Boot** — [Security Advisory 140](https://www.arista.com/en/support/advisories-notices/security-advisory/24074-security-advisory-0140){: target="_blank" } <br> *(June 3rd, 2026)*
+* **VeloCloud Orchestrator SQL Injection** — [Security Advisory 0145](https://www.arista.com/en/support/advisories-notices/security-advisory/24365-security-advisory-0145){: target="_blank" } <br> *(July 27th, 2026)*
+* **VeloCloud Orchestrator On-Prem Privileged Escalation** — [Security Advisory 0144](https://www.arista.com/en/support/advisories-notices/security-advisory/24364-security-advisory-0144){: target="_blank" } <br> *(July 27th, 2026)*
 
 ### **Field Notices**
-* **Roaming for Wi-Fi 7 Windows clients with Intel BE201 adapters** — [Field Notice 130](https://www.arista.com/en/support/advisories-notices/field-notice/24110-field-notice-0130){: target="_blank" } <br> *(June 18th, 2026)*
-* **Transmission Failures and Throughput Issues in AP Firmware 21.1.0F-81** — [Field Notice 129](https://www.arista.com/en/support/advisories-notices/field-notice/24107-field-notice-0129){: target="_blank" } <br> *(June 16th, 2026)*
+* **Deprecation of EOS SWAG rpr Redundancy Mode** — [Field Notice 134](https://www.arista.com/en/support/advisories-notices/field-notice/24450-field-notice-0134){: target="_blank" } <br> *(August 18th, 2026)*
+* **CloudVision Cluster Replay CLI Commands** — [Field Notice 133](https://www.arista.com/en/support/advisories-notices/field-notice/24406-field-notice-0133){: target="_blank" } <br> *(August 6th, 2026)*
 
 <br>
 
@@ -230,9 +265,10 @@ Click on the boxes below to be directed to Arista's website for additional lists
 ### **New Product Releases** * **Q1 2026** — [Ask AVA - CloudVision as a Service (beta feature)](https://www.arista.io/help/articles/overview-core-tools-ask-ava){: target="_blank" }
 
 ###  **End of Sale / End of Software Support**
-* **June 25th, 2026** — [DMF Software Support for 7260X3](https://www.arista.com/en/support/advisories-notices/end-of-support/24116-end-of-dmf-software-support-for-7260x3){: target="_blank" }
-* **June 15th, 2026** — [DCS-7130-48EHS Series](https://www.arista.com/en/support/advisories-notices/end-of-sale/24106-end-of-sale-of-the-arista-dcs-7130-48ehs-series){: target="_blank" }
-* **June 1st, 2026** — [DCA-300-CV](https://www.arista.com/en/support/advisories-notices/end-of-sale/24073-end-of-sale-of-dca-300-cv){: target="_blank" }
+* **August 18th, 2026** — [DCA-AGNI-100](https://www.arista.com/en/support/advisories-notices/end-of-sale/24498-end-of-sale-notice-of-dca-agni-100){: target="_blank" }
+* **August 13th, 2026** — [DCA-NDR-NCC10](https://www.arista.com/en/support/advisories-notices/end-of-sale/24449-end-of-sale-of-the-arista-dca-ndr-ncc10){: target="_blank" }
+* **August 3rd, 2026** — [DCS-7060DX5-32](https://www.arista.com/en/support/advisories-notices/end-of-sale/24369-end-of-sale-of-the-arista-dcs-7060dx5-32-model-of-the-7060x5-series){: target="_blank" }
+* **August 3rd, 2026** — [DCS-7060CX5-56D8](https://www.arista.com/en/support/advisories-notices/end-of-sale/24368-end-of-sale-of-the-arista-dcs-7060cx5-56d8-model-of-the-7060x5-series){: target="_blank" }
 
 
 <br>
