@@ -70,7 +70,7 @@ We welcome your feedback on the newsletter. If you have any ideas or suggestions
 ---
 ## Featured Articles
 
-###  Troubleshooting BGP EVPN VxLAN Issues Through CloudVision
+###  Troubleshooting BGP EVPN VxLAN Issues With CloudVision
 By: Murthy Devarakonda, Manager, Systems Engineering
 <br>
 
